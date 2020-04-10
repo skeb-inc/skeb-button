@@ -86,6 +86,7 @@ function sendRequest(uid, success) {
         success(data);
     };
     xhr.open("GET", "https://skeb.jp/api/users/exists?twitter_uid=" + uid);
+    xhr.setRequestHeader("Accept", "application/json");
     xhr.send();
 }
 
