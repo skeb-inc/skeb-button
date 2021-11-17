@@ -1,24 +1,24 @@
 {
-
   "description": "Add Skeb button to Twitter.",
   "manifest_version": 2,
   "name": "Skeb Button",
   "version": "1.02",
-
   "permissions": [
     "https://*.twitter.com/",
     "https://skeb.jp/"
   ],
-
   "browser_action": {
     "default_icon": "128.png",
     "default_title": "Skeb Button"
   },
-
   "content_scripts": [
     {
-      "matches": ["https://*.twitter.com/*"],
-      "js": ["index.js"]
+      "matches": [
+        "https://*.twitter.com/*"
+      ],
+      "js": [
+        "index.js"
+      ]
     }
   ],
   "icons": {
